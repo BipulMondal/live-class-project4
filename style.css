@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    position: relative;
+}
+.navbar-container{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+.navbar-container img{
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    margin-top: 5px;
+    margin-left: 80px;
+}
+.grow-list{
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.list{
+    height: 30px;
+    width: 900px;
+    position: absolute; 
+    list-style: none;
+    color: #acacac;
+    font-size: 15px;
+}
+.list-item{
+    margin-left: 40px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.button-group{
+    float: right;
+    margin-right: 100px;
+}
+.nav-button{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #7363cc;
+    color: #ffffff;
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+.banner-container{
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+.heading-text{
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    color: #130438;
+    margin-top: 70px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 80px;
+}
+.heading-text span{
+    color: #7363cc;
+}
+.description{
+    width: 350px;
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 85px;
+    font-size: 16px;
+    color: #acacac;
+}
+.btn{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #7363cc;
+    color: #ffffff;
+    border: none;
+    margin-top: 350px;
+    margin-left: 80px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.banner-container img{
+    height: 500px;
+    width: 800px;
+    float: right;
+    margin-right: 20px;
+}
+/* hover effect */
+.list-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    top: 20px;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.list-item:hover:after {
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+.btn:hover {
+    border: 2px solid #7363cc;
+    border-radius: 35px;
+    background-color: #fff;
+    color: #7363cc;
+    transition: all .5s ease-in-out;
+}
+.nav-button:hover {
+    border: 2px solid #7363cc;
+    border-radius: 35px;
+    background-color: #fff;
+    color: #7363cc;
+    transition: all .5s ease-in-out;
+}
